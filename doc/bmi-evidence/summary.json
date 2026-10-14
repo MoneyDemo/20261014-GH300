@@ -1,0 +1,20 @@
+{
+  "cases": 38,
+  "positive": 30,
+  "numericWithinPrecision": 30,
+  "classificationMatches": 24,
+  "classificationDifferenceIds": [
+    "B01",
+    "B05",
+    "B06",
+    "B07",
+    "P02",
+    "P03"
+  ],
+  "cliExitCodes": {
+    "0": 33,
+    "1": 5
+  },
+  "formalNetworkEntries": 946,
+  "mcpNetworkEntries": 960
+}

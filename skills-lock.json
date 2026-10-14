@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "skills": {
+    "chrome-devtools": {
+      "source": "lettucebo/Skills",
+      "ref": "v2.1.8",
+      "sourceType": "github",
+      "skillPath": "skills/chrome/chrome-devtools/SKILL.md",
+      "computedHash": "96cb4e6a175cc22e43fe24c3f94fcef94fd1cf7f94df82b486e5ea618a15e371"
+    }
+  }
+}

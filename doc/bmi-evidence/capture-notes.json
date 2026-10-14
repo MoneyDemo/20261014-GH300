@@ -1,0 +1,52 @@
+{
+  "console": {
+    "messageId": 4,
+    "level": "error",
+    "message": "Ignoring duplicate Content-Security-Policy directive 'frame-src'.",
+    "occurrences": 79,
+    "scope": "MCP cumulative log after main and probe batches; not per-case counts"
+  },
+  "alerts": {
+    "I05": {"requestId": 730, "message": "請輸入正確身高數字!!"},
+    "I06": {"requestId": 754, "message": "請輸入正確體重數字!!"},
+    "I07": {"requestId": 778, "message": "請輸入身高!!"},
+    "I08": {"requestId": 802, "message": "請輸入體重!!"}
+  },
+  "headerSample": {
+    "requestId": 80,
+    "caseId": "N01",
+    "method": "POST",
+    "url": "https://www.hpa.gov.tw/Obesity/BmiCalculate.aspx",
+    "requestHeaders": {
+      "content-type": "application/x-www-form-urlencoded",
+      "content-length": "6672",
+      "sec-fetch-dest": "iframe",
+      "sec-fetch-site": "same-origin"
+    },
+    "responseHeaders": {
+      "cache-control": "private",
+      "content-length": "9656",
+      "content-type": "text/html; charset=utf-8",
+      "strict-transport-security": "max-age=480",
+      "x-content-type-options": "nosniff",
+      "cross-origin-opener-policy": "same-origin",
+      "cross-origin-resource-policy": "same-origin"
+    },
+    "contentEncodingHeaderPresent": false,
+    "sensitiveFields": "Cookie and ASP.NET hidden fields omitted; this is a selected-header sample, not all headers"
+  },
+  "loadTrace": {
+    "lcpMs": 242,
+    "cls": 0,
+    "ttfbMs": 60,
+    "cpuThrottling": "1x",
+    "networkThrottling": "none",
+    "cache": "reload after prior navigation; not guaranteed cold",
+    "documentLatencyInsight": "No redirect; server responded quickly; compression missing; estimated FCP/LCP savings 0 ms"
+  },
+  "preliminary": {
+    "manualCase": "170 cm / 65 kg; MCP fill_form and click; 22.5 / 體位正常",
+    "abandonedRunner": "Cross-navigation initScript did not continue after the first POST. Excluded from formal case statistics.",
+    "mcpNetworkScope": "960 entries since parent navigation; includes preliminary parent POST 54 and its resources; formal case range starts at GET 68"
+  }
+}
