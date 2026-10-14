@@ -1,0 +1,5221 @@
+<?xml version="1.0" encoding="UTF-8"?><w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:oel="http://schemas.microsoft.com/office/2019/extlst" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:w16cex="http://schemas.microsoft.com/office/word/2018/wordml/cex" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" xmlns:w16="http://schemas.microsoft.com/office/word/2018/wordml" xmlns:w16du="http://schemas.microsoft.com/office/word/2023/wordml/word16du" xmlns:w16sdtdh="http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash" xmlns:w16sdtfl="http://schemas.microsoft.com/office/word/2024/wordml/sdtformatlock" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" mc:Ignorable="w14 w15 w16se w16cid w16 w16cex w16sdtdh w16sdtfl w16du wp14">
+  <w:body>
+    <w:p w14:paraId="462000CE" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:spacing w:after="240" w:line="420" w:lineRule="auto"/>
+        <w:jc w:val="center"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="32"/>
+          <w:szCs w:val="32"/>
+        </w:rPr>
+        <w:t>R04_BMI Calculator 軟體測試報告書</w:t>
+      </w:r>
+      
+    </w:p>
+    <w:p w14:paraId="54CBAE55" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:keepNext/>
+        <w:spacing w:after="240"/>
+      </w:pPr>
+      <w:r>
+        <w:t>1　 文件目的</w:t>
+      </w:r>
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="24EBE85E" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="720" w:firstLine="480"/>
+      </w:pPr>
+      <w:r>
+        <w:t>本報告記錄 BMI Calculator 0.1.0 的實際單元測試結果，提供程式品質確認、測試範圍追溯及後續驗收規劃之依據；不代表正式驗收已完成。</w:t>
+      </w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="093E30CC" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="720" w:hanging="540"/>
+      </w:pPr>
+      <w:r>
+        <w:t>1.1　確認公斤體重、英吋身高的換算與 BMI 計算結果。</w:t>
+      </w:r>
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="31E2C300" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="720" w:hanging="540"/>
+      </w:pPr>
+      <w:r>
+        <w:t>1.2　驗證 18.5、24、27 分類門檻及其邊界值行為。</w:t>
+      </w:r>
+      
+      
+      
+      
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="635F9603" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="720" w:hanging="540"/>
+      </w:pPr>
+      <w:r>
+        <w:t>1.3　記錄已執行、未執行及不適用項目，供開發與測試人員溝通。</w:t>
+      </w:r>
+      
+    </w:p>
+    <w:p w14:paraId="650AE813" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:keepNext/>
+        <w:spacing w:before="420" w:after="240"/>
+      </w:pPr>
+      <w:r>
+        <w:t>2　 工作說明</w:t>
+      </w:r>
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="6E760BD3" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="720" w:hanging="540"/>
+      </w:pPr>
+      <w:r>
+        <w:t>2.1　軟體測試概述：主控台入口 app.py 呼叫套件 bmi_calculator.app；測試採 pytest 與 AssertPy，依 Arrange／Act／Assert 編寫。</w:t>
+      </w:r>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="41B07F36" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:spacing w:after="140"/>
+        <w:ind w:left="1440" w:hanging="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>2.1.1　單元測試：已執行 7 個案例，全部通過。</w:t>
+      </w:r>
+      
+      
+      
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="8000" w:type="dxa"/>
+        <w:tblInd w:w="600" w:type="dxa"/>
+        <w:tblBorders>
+          <w:top w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+          <w:left w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+          <w:bottom w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+          <w:right w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+          <w:insideH w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideV w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+        </w:tblBorders>
+        <w:tblLayout w:type="fixed"/>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="2450"/>
+        <w:gridCol w:w="3100"/>
+        <w:gridCol w:w="2450"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="001D0287" w14:paraId="7188D5F9" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2450" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:left w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="2B0D0147" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:t>程式規格文件／表單</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3100" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:left w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="2CF6BF49" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:t>流程</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2450" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:left w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="111519BB" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:t>負責人員</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="0D44F211" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2450" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:left w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:bottom w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="220" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="80" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="2985B6C2" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:t>README.md</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="09C0E95A" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="001D0287">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+          </w:p>
+          <w:p w14:paraId="48C4D000" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:t>src/bmi_calculator/</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="416C7394" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:t>app.py</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="789ADDF6" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="001D0287">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+          </w:p>
+          <w:p w14:paraId="68422777" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:t>tests/test_calculate_bmi.py</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="4CF0FF3C" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="001D0287">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+          </w:p>
+          <w:p w14:paraId="547C7610" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:t>tests/test_classify_bmi.py</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3100" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:left w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:bottom w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="45CA38C7" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:noProof/>
+              </w:rPr>
+              <w:drawing>
+                <wp:inline distT="0" distB="0" distL="0" distR="0" wp14:anchorId="792C38A1" wp14:editId="30857878">
+                  <wp:extent cx="1714500" cy="1771650"/>
+                  <wp:effectExtent l="0" t="0" r="0" b="0"/>
+                  <wp:docPr id="1" name="unit" descr="以 Mermaid 繪製的 unit 流程圖" title="unit"/>
+                  <wp:cNvGraphicFramePr>
+                    <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" noChangeAspect="1"/>
+                  </wp:cNvGraphicFramePr>
+                  <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+                    <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                      <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                        <pic:nvPicPr>
+                          <pic:cNvPr id="0" name=""/>
+                          <pic:cNvPicPr>
+                            <a:picLocks noChangeAspect="1" noChangeArrowheads="1"/>
+                          </pic:cNvPicPr>
+                        </pic:nvPicPr>
+                        <pic:blipFill>
+                          <a:blip r:embed="rId7"/>
+                          <a:srcRect/>
+                          <a:stretch>
+                            <a:fillRect/>
+                          </a:stretch>
+                        </pic:blipFill>
+                        <pic:spPr bwMode="auto">
+                          <a:xfrm>
+                            <a:off x="0" y="0"/>
+                            <a:ext cx="1714500" cy="1771650"/>
+                          </a:xfrm>
+                          <a:prstGeom prst="rect">
+                            <a:avLst/>
+                          </a:prstGeom>
+                        </pic:spPr>
+                      </pic:pic>
+                    </a:graphicData>
+                  </a:graphic>
+                </wp:inline>
+              </w:drawing>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2450" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:left w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:bottom w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:right w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="220" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="80" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="79F0F285" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:t>程式設計人員</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="2B94DC6B" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="001D0287">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+          </w:p>
+          <w:p w14:paraId="08D8B158" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="001D0287">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+          </w:p>
+          <w:p w14:paraId="7C18207B" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:t>測試執行：自動化工具</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="44A312A2" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="001D0287">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+          </w:p>
+          <w:p w14:paraId="3F0EA5BF" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="001D0287">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+          </w:p>
+          <w:p w14:paraId="2FF96282" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:t>負責人：待指定</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w14:paraId="29072BAD" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:spacing w:before="160" w:after="140" w:line="300" w:lineRule="auto"/>
+        <w:jc w:val="center"/>
+        <w:sectPr w:rsidR="001D0287">
+          <w:headerReference w:type="even" r:id="rId8"/>
+          <w:headerReference w:type="default" r:id="rId9"/>
+          <w:footerReference w:type="even" r:id="rId10"/>
+          <w:footerReference w:type="default" r:id="rId11"/>
+          <w:headerReference w:type="first" r:id="rId12"/>
+          <w:footerReference w:type="first" r:id="rId13"/>
+          <w:pgSz w:w="11900" w:h="16840"/>
+          <w:pgMar w:top="1400" w:right="1290" w:bottom="1400" w:left="1250" w:header="708" w:footer="420" w:gutter="0"/>
+          <w:cols w:space="720"/>
+          <w:docGrid w:linePitch="360"/>
+        </w:sectPr>
+      </w:pPr>
+      <w:r>
+        <w:t>R04_圖1：單元測試流程圖</w:t>
+      </w:r>
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="132359DA" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:spacing w:after="140"/>
+        <w:ind w:left="1440" w:hanging="720"/>
+      </w:pPr>
+      <w:r>
+        <w:lastRenderedPageBreak/>
+        <w:t>2.1.2　整合測試：下圖為後續規劃流程，本次未執行。</w:t>
+      </w:r>
+      
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="8000" w:type="dxa"/>
+        <w:tblInd w:w="600" w:type="dxa"/>
+        <w:tblBorders>
+          <w:top w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+          <w:left w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+          <w:bottom w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+          <w:right w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+          <w:insideH w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideV w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+        </w:tblBorders>
+        <w:tblLayout w:type="fixed"/>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="2450"/>
+        <w:gridCol w:w="3100"/>
+        <w:gridCol w:w="2450"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="001D0287" w14:paraId="74DF3715" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2450" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:left w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="4E3AB70B" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:t>程式規格文件／表單</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3100" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:left w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="3D8CF956" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:t>流程</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2450" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:left w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="64463800" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:t>負責人員</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="067BB392" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2450" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:left w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:bottom w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="220" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="80" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="32510DBA" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:t>軟體測試計畫</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="6A885E07" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="001D0287">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+          </w:p>
+          <w:p w14:paraId="0C8C1AFF" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="001D0287">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+          </w:p>
+          <w:p w14:paraId="75F4640D" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:t>測試案例</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="3BAF4880" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="001D0287">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+          </w:p>
+          <w:p w14:paraId="4E7D210E" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="001D0287">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+          </w:p>
+          <w:p w14:paraId="3169E5A9" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:t>執行紀錄</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="469C5A7D" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="001D0287">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+          </w:p>
+          <w:p w14:paraId="77483BEF" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:t>異常紀錄</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="29302774" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="001D0287">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+          </w:p>
+          <w:p w14:paraId="376648B6" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="001D0287">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+          </w:p>
+          <w:p w14:paraId="6A00311A" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:t>複測結果</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3100" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:left w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:bottom w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="24689B1F" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:noProof/>
+              </w:rPr>
+              <w:drawing>
+                <wp:inline distT="0" distB="0" distL="0" distR="0" wp14:anchorId="0B6B505D" wp14:editId="2EF6BF2D">
+                  <wp:extent cx="1428750" cy="3143250"/>
+                  <wp:effectExtent l="0" t="0" r="0" b="0"/>
+                  <wp:docPr id="2" name="integration" descr="以 Mermaid 繪製的 integration 流程圖" title="integration"/>
+                  <wp:cNvGraphicFramePr>
+                    <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" noChangeAspect="1"/>
+                  </wp:cNvGraphicFramePr>
+                  <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+                    <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                      <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                        <pic:nvPicPr>
+                          <pic:cNvPr id="0" name=""/>
+                          <pic:cNvPicPr>
+                            <a:picLocks noChangeAspect="1" noChangeArrowheads="1"/>
+                          </pic:cNvPicPr>
+                        </pic:nvPicPr>
+                        <pic:blipFill>
+                          <a:blip r:embed="rId14"/>
+                          <a:srcRect/>
+                          <a:stretch>
+                            <a:fillRect/>
+                          </a:stretch>
+                        </pic:blipFill>
+                        <pic:spPr bwMode="auto">
+                          <a:xfrm>
+                            <a:off x="0" y="0"/>
+                            <a:ext cx="1428750" cy="3143250"/>
+                          </a:xfrm>
+                          <a:prstGeom prst="rect">
+                            <a:avLst/>
+                          </a:prstGeom>
+                        </pic:spPr>
+                      </pic:pic>
+                    </a:graphicData>
+                  </a:graphic>
+                </wp:inline>
+              </w:drawing>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2450" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:left w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:bottom w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+              <w:right w:val="none" w:sz="0" w:space="0" w:color="FFFFFF"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="220" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="80" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="5C13C495" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:t>測試負責人</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="7D697D8A" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="001D0287">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+          </w:p>
+          <w:p w14:paraId="5302092C" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:t>測試負責人</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="1026C882" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="001D0287">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+          </w:p>
+          <w:p w14:paraId="3AE6EFCE" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:t>測試人員</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="488A7DBD" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="001D0287">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+          </w:p>
+          <w:p w14:paraId="04069594" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:t>程式設計人員</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="0BA5010C" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="001D0287">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+          </w:p>
+          <w:p w14:paraId="5425D843" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:t>測試人員</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="4AE6774D" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:t>（均待指定）</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w14:paraId="52A49F69" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:spacing w:before="160" w:after="140" w:line="300" w:lineRule="auto"/>
+        <w:jc w:val="center"/>
+      </w:pPr>
+      <w:r>
+        <w:t>R04_圖2：系統整合測試流程圖（規劃）</w:t>
+      </w:r>
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="108461E7" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="720" w:hanging="540"/>
+      </w:pPr>
+      <w:r>
+        <w:t>2.2　測試要項及一般性要求：</w:t>
+      </w:r>
+      
+    </w:p>
+    <w:p w14:paraId="41AC9DD4" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="1440" w:hanging="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>2.2.1　安全性與相容性：本專案為本機主控台程式，無網頁、網路端點及資料庫；不得將未測範圍視為已通過。</w:t>
+      </w:r>
+      
+    </w:p>
+    <w:p w14:paraId="162FAFBA" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="2160" w:hanging="1000"/>
+      </w:pPr>
+      <w:r>
+        <w:t>2.2.1.1.　安全性要求測試：本次未執行安全測試。程式未檢查正數、有限數值及輸入格式，未捕捉輸入例外；非數字可能引發 ValueError，零身高可能引發 ZeroDivisionError。SQL Injection 對目前無 SQL 的程式不適用。</w:t>
+      </w:r>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="3E7520A7" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="2160" w:hanging="1000"/>
+      </w:pPr>
+      <w:r>
+        <w:t>2.2.1.2.　相容性要求測試：已於 Windows 11、Python 3.13.15 執行。Python 3.10 以上是宣告需求，並非全部版本皆已驗證；瀏覽器相容性不適用。</w:t>
+      </w:r>
+      
+      
+      
+      
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="2E727558" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="2160" w:hanging="1000"/>
+        <w:sectPr w:rsidR="001D0287">
+          <w:footerReference w:type="default" r:id="rId15"/>
+          <w:pgSz w:w="11900" w:h="16840"/>
+          <w:pgMar w:top="1400" w:right="1290" w:bottom="1400" w:left="1250" w:header="708" w:footer="420" w:gutter="0"/>
+          <w:cols w:space="720"/>
+          <w:docGrid w:linePitch="360"/>
+        </w:sectPr>
+      </w:pPr>
+      <w:r>
+        <w:t>2.2.1.3.　負載及壓力測試：未執行；詳細範圍與限制見下一頁。</w:t>
+      </w:r>
+      
+    </w:p>
+    <w:p w14:paraId="780C802A" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:lastRenderedPageBreak/>
+        <w:t>本次僅驗證函式結果；pytest 的 0.14 秒為該次整體測試耗時，不是負載測試結果或效能服務水準承諾。</w:t>
+      </w:r>
+      
+      
+      
+      
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="7900" w:type="dxa"/>
+        <w:tblInd w:w="2000" w:type="dxa"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+          <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+          <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+          <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+          <w:insideH w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideV w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+        </w:tblBorders>
+        <w:tblLayout w:type="fixed"/>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="1800"/>
+        <w:gridCol w:w="6100"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="001D0287" w14:paraId="43262CDA" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="129DCB3D" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>測試目標</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6100" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="4A8A9FED" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>負載與壓力測試未執行。單人、本機、一次輸入一組數值的主控台工具，尚無併發使用者或吞吐量需求。</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="61DD3087" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="2A93744C" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>技術</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6100" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="75E15DEC" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>若後續新增批次處理，應先核准資料量與耗時門檻，再以代表性數值重複執行並記錄時間及資源用量。此為規劃，非本次實測。</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="72290248" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="7D9B8661" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>完成標準</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6100" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="527F2130" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>未訂定負載驗收門檻，本次無通過／失敗判定。7 個單元測試通過不能取代負載測試。</w:t>
+            </w:r>
+            
+            
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="3E238C82" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="2A4967D0" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>需考慮的特殊事項</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6100" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="5D206084" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>避免受其他程式干擾，記錄作業系統、Python 版本與硬體。多客戶端、網路連線及資料庫負載對目前架構不適用。</w:t>
+            </w:r>
+            
+            
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w14:paraId="74D227EC" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:spacing w:before="280"/>
+        <w:ind w:left="2160" w:hanging="1000"/>
+      </w:pPr>
+      <w:r>
+        <w:t>2.2.1.4.　容量測試：</w:t>
+      </w:r>
+      
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="7900" w:type="dxa"/>
+        <w:tblInd w:w="2000" w:type="dxa"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+          <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+          <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+          <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+          <w:insideH w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideV w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+        </w:tblBorders>
+        <w:tblLayout w:type="fixed"/>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="1800"/>
+        <w:gridCol w:w="6100"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="001D0287" w14:paraId="7F424031" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="3D527AA0" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>測試目標</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6100" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="20372990" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>資料庫容量測試不適用：本專案無資料庫，也不保存 BMI 紀錄。數值極端值與批次容量未執行測試。</w:t>
+            </w:r>
+            
+            
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="3E2BEFEF" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="2BA59190" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>技術</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6100" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="09CDFB3C" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>未執行。若增加儲存或批次需求，需先定義最大資料筆數、檔案大小及資料保留規則。</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="273EC759" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="36A07413" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>完成標準</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6100" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="4491C4FC" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>未訂定容量門檻；本次不判定容量測試通過。不得將沒有資料庫解讀為已驗證所有數值範圍。</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="2CA3AF5D" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="2E7265F8" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>需考慮的特殊事項</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6100" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="75BE9D41" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:t>目前採 Python float 計算。NaN、無限值、負數、零及極端值未包含在本次 7 個測試案例。</w:t>
+            </w:r>
+            
+            
+            
+            
+            
+            
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w14:paraId="1E8B5A3B" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:spacing w:before="300"/>
+        <w:ind w:left="720" w:hanging="540"/>
+      </w:pPr>
+      <w:r>
+        <w:t>2.3　問題追蹤系統：本次測試未出現失敗案例，未建立異常編號。日後發現問題應記錄編號、重現步驟、預期與實際結果、負責人及複測紀錄。</w:t>
+      </w:r>
+      
+    </w:p>
+    <w:p w14:paraId="63113BEF" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="720"/>
+        <w:sectPr w:rsidR="001D0287">
+          <w:footerReference w:type="default" r:id="rId16"/>
+          <w:pgSz w:w="11900" w:h="16840"/>
+          <w:pgMar w:top="1400" w:right="1290" w:bottom="1400" w:left="1250" w:header="708" w:footer="420" w:gutter="0"/>
+          <w:cols w:space="720"/>
+          <w:docGrid w:linePitch="360"/>
+        </w:sectPr>
+      </w:pPr>
+      <w:r>
+        <w:t>目前未確認有正式 Issue 管理程序、負責人指派或核准紀錄；下一頁流程為建議處理方式，不表示已落實。</w:t>
+      </w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="27352A00" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="1440" w:hanging="720"/>
+      </w:pPr>
+      <w:r>
+        <w:lastRenderedPageBreak/>
+        <w:t>2.3.1　問題追蹤及處理流程：異常確認、修正與複測應留存紀錄。</w:t>
+      </w:r>
+      
+    </w:p>
+    <w:p w14:paraId="3D99043D" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:spacing w:line="240" w:lineRule="auto"/>
+        <w:jc w:val="center"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:noProof/>
+        </w:rPr>
+        <w:drawing>
+          <wp:inline distT="0" distB="0" distL="0" distR="0" wp14:anchorId="4B10EE73" wp14:editId="63988818">
+            <wp:extent cx="1695450" cy="4048125"/>
+            <wp:effectExtent l="0" t="0" r="0" b="0"/>
+            <wp:docPr id="3" name="issues" descr="以 Mermaid 繪製的 issues 流程圖" title="issues"/>
+            <wp:cNvGraphicFramePr>
+              <a:graphicFrameLocks xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" noChangeAspect="1"/>
+            </wp:cNvGraphicFramePr>
+            <a:graphic xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main">
+              <a:graphicData uri="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                <pic:pic xmlns:pic="http://schemas.openxmlformats.org/drawingml/2006/picture">
+                  <pic:nvPicPr>
+                    <pic:cNvPr id="0" name=""/>
+                    <pic:cNvPicPr>
+                      <a:picLocks noChangeAspect="1" noChangeArrowheads="1"/>
+                    </pic:cNvPicPr>
+                  </pic:nvPicPr>
+                  <pic:blipFill>
+                    <a:blip r:embed="rId17"/>
+                    <a:srcRect/>
+                    <a:stretch>
+                      <a:fillRect/>
+                    </a:stretch>
+                  </pic:blipFill>
+                  <pic:spPr bwMode="auto">
+                    <a:xfrm>
+                      <a:off x="0" y="0"/>
+                      <a:ext cx="1695450" cy="4048125"/>
+                    </a:xfrm>
+                    <a:prstGeom prst="rect">
+                      <a:avLst/>
+                    </a:prstGeom>
+                  </pic:spPr>
+                </pic:pic>
+              </a:graphicData>
+            </a:graphic>
+          </wp:inline>
+        </w:drawing>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="32446184" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:spacing w:before="160" w:after="140" w:line="300" w:lineRule="auto"/>
+        <w:jc w:val="center"/>
+      </w:pPr>
+      <w:r>
+        <w:t>R04_圖3：系統追蹤及處理基本流程（規劃）</w:t>
+      </w:r>
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="045DD821" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="720" w:hanging="540"/>
+      </w:pPr>
+      <w:r>
+        <w:t>2.4　系統測試計畫書：本次測試計畫涵蓋計算及分類函式、7 個案例、uv 專案環境與通過準則；九項計畫內容見附件一。正式審核及人員簽核待辦。</w:t>
+      </w:r>
+      
+      
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="1F390EEE" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="720" w:hanging="540"/>
+      </w:pPr>
+      <w:r>
+        <w:t>2.5　系統測試報告：以下僅彙整本次實際執行之單元測試結果，未取得正式驗收或發行核准紀錄。</w:t>
+      </w:r>
+      
+    </w:p>
+    <w:p w14:paraId="6AFE88FD" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="1440" w:hanging="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>2.5.1　測試工作項目及時程：2026/10/14 完成原始碼與案例核對、環境版本查詢、pytest 執行及報告編製；7 passed in 0.14s。後續整合、輸入有效性與正式驗收時程待排定。</w:t>
+      </w:r>
+      
+      
+      
+      
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="41DA4B85" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="1440" w:hanging="720"/>
+        <w:sectPr w:rsidR="001D0287">
+          <w:footerReference w:type="default" r:id="rId18"/>
+          <w:pgSz w:w="11900" w:h="16840"/>
+          <w:pgMar w:top="1400" w:right="1290" w:bottom="1400" w:left="1250" w:header="708" w:footer="420" w:gutter="0"/>
+          <w:cols w:space="720"/>
+          <w:docGrid w:linePitch="360"/>
+        </w:sectPr>
+      </w:pPr>
+      <w:r>
+        <w:t>2.5.2　測試案例測試結果：下一頁列出案例編號、測試工作、應產生行為、結果、失敗原因及測試異常報告編號。</w:t>
+      </w:r>
+      
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="9360" w:type="dxa"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+          <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+          <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+          <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+          <w:insideH w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideV w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+        </w:tblBorders>
+        <w:tblLayout w:type="fixed"/>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="820"/>
+        <w:gridCol w:w="2300"/>
+        <w:gridCol w:w="2400"/>
+        <w:gridCol w:w="900"/>
+        <w:gridCol w:w="1400"/>
+        <w:gridCol w:w="1540"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="001D0287" w14:paraId="2B860A61" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="820" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="6E8FFFA9" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:lastRenderedPageBreak/>
+              <w:t>案例</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="254FE823" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>編號</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2300" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="0589565E" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>測試工作</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2400" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="00C30ADA" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>應產生行為</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="900" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="5583F13C" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>結果</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1400" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="41CA72CC" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>失敗原因</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1540" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="0EA2E5E9" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>測試異常</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="1A5AE168" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>報告編號</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="1B3B3598" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="820" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="5048FC89" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>C1-01</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2300" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="1B0CF0AF" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>公斤與英吋換算；體重 57 kg、身高 67 in。</w:t>
+            </w:r>
+            
+            
+            
+            
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2400" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="5A7A260A" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>身高為 1.7018 m；將 BMI 在斷言階段取兩位小數，應為 19.68。</w:t>
+            </w:r>
+            
+            
+            
+            
+            
+            
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="900" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="1B123DE1" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>Pass</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1400" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="25DC97F6" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>無</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1540" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="1ABE8D30" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>無</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="6A640B0A" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="820" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="4983C2D0" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>C2-01</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2300" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="5ED5810C" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>分類下界之前：BMI = 18.49。</w:t>
+            </w:r>
+            
+            
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2400" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="3FC4A13F" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>回傳 Underweight。</w:t>
+            </w:r>
+            
+            
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="900" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="756AB956" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>Pass</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1400" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="1A551513" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>無</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1540" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="4D16450E" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>無</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="37ABCE8B" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="820" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="1B08807C" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>C2-02</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2300" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="3035E692" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>正常體重下界：BMI = 18.5。</w:t>
+            </w:r>
+            
+            
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2400" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="1EDB3A7F" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>回傳 Normal weight。</w:t>
+            </w:r>
+            
+            
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="900" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="5B5FCA3D" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>Pass</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1400" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="04DE7788" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>無</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1540" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="659C4910" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>無</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="334C0208" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="820" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="551F7B45" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>C2-03</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2300" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="33C8D890" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>過重下界之前：BMI = 23.99。</w:t>
+            </w:r>
+            
+            
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2400" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="3B28E5A1" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>回傳 Normal weight。</w:t>
+            </w:r>
+            
+            
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="900" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="2AFE18BF" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>Pass</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1400" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="71082742" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>無</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1540" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="60D700F1" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>無</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="59353FB0" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="820" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="05F6B6A4" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>C2-04</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2300" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="64C95ADD" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>過重下界：BMI = 24。</w:t>
+            </w:r>
+            
+            
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2400" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="1BAFAD59" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>回傳 Overweight。</w:t>
+            </w:r>
+            
+            
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="900" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="3D99F9BC" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>Pass</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1400" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="570E894C" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>無</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1540" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="63B606F1" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>無</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="3254329F" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="820" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="6AD9319B" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>C2-05</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2300" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="2950EC04" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>肥胖下界之前：BMI = 26.99。</w:t>
+            </w:r>
+            
+            
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2400" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="207B0DBA" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>回傳 Overweight。</w:t>
+            </w:r>
+            
+            
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="900" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="2BCA5BDC" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>Pass</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1400" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="0D32BEBF" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>無</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1540" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="6ECC6539" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>無</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="5E52FC35" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="820" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="6326BB6D" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>C2-06</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2300" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="5FF1313E" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>肥胖下界：BMI = 27。</w:t>
+            </w:r>
+            
+            
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2400" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="42FAFFE6" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>回傳 Obesity。</w:t>
+            </w:r>
+            
+            
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="900" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="3237F55E" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>Pass</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1400" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="27CCF6AF" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>無</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1540" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="7D2061C0" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>無</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w14:paraId="30A26807" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:spacing w:before="300"/>
+        <w:ind w:left="1440" w:hanging="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>2.5.3　測試異常報告：本次 7 個測試案例之異常彙總。</w:t>
+      </w:r>
+      
+      
+      
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="8700" w:type="dxa"/>
+        <w:tblInd w:w="600" w:type="dxa"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+          <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+          <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+          <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+          <w:insideH w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideV w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+        </w:tblBorders>
+        <w:tblLayout w:type="fixed"/>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="1800"/>
+        <w:gridCol w:w="6900"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="001D0287" w14:paraId="6F8A7CE4" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="617DA829" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>專案名稱</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6900" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="2CA92202" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>BMI Calculator（bmi-calculator）</w:t>
+            </w:r>
+            
+            
+            
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="5A3D8C5E" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="2EE632B0" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>版本序號</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6900" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="50334727" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>0.1.0；執行時工作目錄，無 Git commit 可供追溯。</w:t>
+            </w:r>
+            
+            
+            
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="67CC7634" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="063ECCE4" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>統計截止日期</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6900" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="3246F908" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>2026/10/14</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="0B0DBD1C" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="29DFA1FA" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>錯誤已解決數</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6900" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="0355BBAE" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>0（本次測試無失敗紀錄，無修正作業）</w:t>
+            </w:r>
+            
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="09F64C1D" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="291C85CF" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>錯誤未解決數</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6900" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="4646173D" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>0（僅指本次 7 個案例的失敗紀錄）</w:t>
+            </w:r>
+            
+            
+            
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="213F15BA" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="48D2BCEA" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>錯誤總數</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6900" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="57A648AE" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>0（不代表程式無缺陷或未測項目均通過）</w:t>
+            </w:r>
+            
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="58409EAE" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="0C31443C" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>備註</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6900" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="59136618" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>通過 7／7，失敗 0。輸入有效性、主控台互動、跨版本、負載與驗收未測；未提供覆蓋率百分比。</w:t>
+            </w:r>
+            
+            
+            
+            
+            
+            
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="4B9267E8" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1800" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="42144BA2" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>負責人</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="6900" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="1FA65833" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>待專案負責人確認；測試由自動化工具執行。</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w14:paraId="4AA8FEC8" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:spacing w:before="140" w:line="280" w:lineRule="auto"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="20"/>
+          <w:szCs w:val="20"/>
+        </w:rPr>
+        <w:t>測試來源：tests/test_calculate_bmi.py:8；tests/test_classify_bmi.py:8、21、34、47、60、73。案例依序對應上述測試函式。</w:t>
+      </w:r>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="50430DC8" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:spacing w:line="280" w:lineRule="auto"/>
+        <w:ind w:left="720"/>
+        <w:sectPr w:rsidR="001D0287">
+          <w:footerReference w:type="default" r:id="rId19"/>
+          <w:pgSz w:w="11900" w:h="16840"/>
+          <w:pgMar w:top="1400" w:right="1290" w:bottom="1400" w:left="1250" w:header="708" w:footer="420" w:gutter="0"/>
+          <w:cols w:space="720"/>
+          <w:docGrid w:linePitch="360"/>
+        </w:sectPr>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="20"/>
+          <w:szCs w:val="20"/>
+        </w:rPr>
+        <w:t>本次未變更原始碼或測試。分類依未四捨五入 BMI 判定；顯示至兩位小數不在本次單元測試範圍。</w:t>
+      </w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="3774844E" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="720" w:hanging="540"/>
+      </w:pPr>
+      <w:r>
+        <w:lastRenderedPageBreak/>
+        <w:t>2.6　系統驗收測試：本次尚未執行正式驗收。下表保留範本欄位，用於後續確認與簽認，不作已驗收之證明。</w:t>
+      </w:r>
+      
+    </w:p>
+    <w:p w14:paraId="0C04653A" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:jc w:val="center"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:b/>
+          <w:bCs/>
+        </w:rPr>
+        <w:t>BMI Calculator 系統</w:t>
+      </w:r>
+      
+    </w:p>
+    <w:p w14:paraId="1FAC2116" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:spacing w:after="220"/>
+        <w:jc w:val="center"/>
+      </w:pPr>
+      <w:r>
+        <w:t>系統驗收功能測試意見反應／異常報告單</w:t>
+      </w:r>
+    </w:p>
+    <w:tbl>
+      <w:tblPr>
+        <w:tblW w:w="9360" w:type="dxa"/>
+        <w:tblBorders>
+          <w:top w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:left w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:bottom w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:right w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideH w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+          <w:insideV w:val="single" w:sz="4" w:space="0" w:color="auto"/>
+        </w:tblBorders>
+        <w:tblLayout w:type="fixed"/>
+        <w:tblLook w:val="04A0" w:firstRow="1" w:lastRow="0" w:firstColumn="1" w:lastColumn="0" w:noHBand="0" w:noVBand="1"/>
+      </w:tblPr>
+      <w:tblGrid>
+        <w:gridCol w:w="1560"/>
+        <w:gridCol w:w="780"/>
+        <w:gridCol w:w="780"/>
+        <w:gridCol w:w="1560"/>
+        <w:gridCol w:w="780"/>
+        <w:gridCol w:w="780"/>
+        <w:gridCol w:w="780"/>
+        <w:gridCol w:w="780"/>
+        <w:gridCol w:w="1560"/>
+      </w:tblGrid>
+      <w:tr w:rsidR="001D0287" w14:paraId="67222C0C" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+          <w:trHeight w:val="650"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1560" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="297E199E" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>專案名稱</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="65A986F5" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>PROJECT ID.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="4680" w:type="dxa"/>
+            <w:gridSpan w:val="5"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="33AB4690" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>BMI Calculator</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1560" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="4CBEC8D2" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>頁次</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="4E2AF735" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>PAGE</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1560" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="615A7AB4" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>1 OF 1</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="184CE840" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+          <w:trHeight w:val="650"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1560" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="2500AE57" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>系統名稱</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="262CFB40" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>SYSTEM ID.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="4680" w:type="dxa"/>
+            <w:gridSpan w:val="5"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="26AF9035" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>bmi-calculator 0.1.0</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1560" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="383BFF72" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>日期</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="70C3891C" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>DATE</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1560" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="186FE911" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>2026/10/14</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="383EE46A" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+          <w:trHeight w:val="650"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1560" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="5976A622" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>功能代號</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="37D039BF" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>FUNCTION ID.</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1560" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="4A443498" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>BMI-01</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2340" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="35A28DC0" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>功能名稱</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="3824D31F" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>FUNCTION NAME</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="3900" w:type="dxa"/>
+            <w:gridSpan w:val="4"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="77C413F7" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>BMI 計算及分類</w:t>
+            </w:r>
+            
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="1B8DB8EC" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+          <w:trHeight w:val="400"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1560" w:type="dxa"/>
+            <w:vMerge w:val="restart"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="5FCD8FBF" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>測</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="6C107909" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="001D0287">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+          </w:p>
+          <w:p w14:paraId="4F0048A0" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>試</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="58EF13CA" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="001D0287">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+          </w:p>
+          <w:p w14:paraId="66D71B46" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>反</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="653E4609" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="001D0287">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+          </w:p>
+          <w:p w14:paraId="2111BFE8" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>應</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7800" w:type="dxa"/>
+            <w:gridSpan w:val="8"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="40FBEBB1" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>□新增　□修改　□刪除　□查詢　□列印</w:t>
+            </w:r>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="1DF1A5F2" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+          <w:trHeight w:val="2200"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1560" w:type="dxa"/>
+            <w:vMerge/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+          </w:tcPr>
+          <w:p w14:paraId="26FC047C" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="001D0287"/>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7800" w:type="dxa"/>
+            <w:gridSpan w:val="8"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="2D44DF37" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>正式驗收：未執行，所有選項未勾選。</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="46341679" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>本次單元測試 7／7 通過，並非驗收簽認。</w:t>
+            </w:r>
+            
+            
+            
+            
+          </w:p>
+          <w:p w14:paraId="574F0376" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>建議後續確認：主控台提示與輸出格式、有效及無效輸入、零與負值、NaN／無限值、安裝流程及 Python 支援版本。</w:t>
+            </w:r>
+            
+            
+            
+            
+          </w:p>
+          <w:p w14:paraId="0D44A81A" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>驗收準則及執行人員應由專案負責人核准。</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="6D0618D3" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+          <w:trHeight w:val="2600"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="1560" w:type="dxa"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="5A77E6BD" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>測</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="44DBD8D8" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="001D0287">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+          </w:p>
+          <w:p w14:paraId="411ABDCC" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>試</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="39F00118" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="001D0287">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+          </w:p>
+          <w:p w14:paraId="4766C238" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>異</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="4C35C9A4" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="001D0287">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+          </w:p>
+          <w:p w14:paraId="4685769D" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>常</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="7800" w:type="dxa"/>
+            <w:gridSpan w:val="8"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="09243D4E" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>本次單元測試無失敗案例；無驗收異常編號。</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="4E508BC3" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>已知測試限制：僅涵蓋 _calculate_bmi 與 _classify_bmi，沒有主控台、效能、容量或安全性實測。</w:t>
+            </w:r>
+            
+            
+            
+            
+          </w:p>
+          <w:p w14:paraId="030E9B0D" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>程式沒有正數及有限數值驗證；無效文字與零身高之例外未捕捉。此為原始碼檢視結果，非本次新增缺陷測試或已核准異常單。</w:t>
+            </w:r>
+          </w:p>
+          <w:p w14:paraId="625EE1B7" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>後續若確認缺陷，應另行編號、指派、修正與複測。</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="67A08859" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+          <w:trHeight w:val="400"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2340" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="1DF3445A" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>專案負責人</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2340" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="1891E12D" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>監驗人員</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2340" w:type="dxa"/>
+            <w:gridSpan w:val="3"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="2F7842D5" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>開發人員</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2340" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="33A8A3CC" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>測試人員</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+      <w:tr w:rsidR="001D0287" w14:paraId="53187C2F" w14:textId="77777777">
+        <w:trPr>
+          <w:cantSplit/>
+          <w:trHeight w:val="650"/>
+        </w:trPr>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2340" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="149BA3DD" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>待指定／未簽章</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2340" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="31EA0D7C" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>不適用／待確認</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2340" w:type="dxa"/>
+            <w:gridSpan w:val="3"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="7B140A5C" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>待指定／未簽章</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+        <w:tc>
+          <w:tcPr>
+            <w:tcW w:w="2340" w:type="dxa"/>
+            <w:gridSpan w:val="2"/>
+            <w:tcBorders>
+              <w:top w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:left w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:bottom w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+              <w:right w:val="single" w:sz="4" w:space="0" w:color="000000"/>
+            </w:tcBorders>
+            <w:tcMar>
+              <w:top w:w="20" w:type="dxa"/>
+              <w:left w:w="80" w:type="dxa"/>
+              <w:bottom w:w="20" w:type="dxa"/>
+              <w:right w:w="80" w:type="dxa"/>
+            </w:tcMar>
+          </w:tcPr>
+          <w:p w14:paraId="4ADE7417" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+            <w:pPr>
+              <w:spacing w:line="240" w:lineRule="auto"/>
+              <w:jc w:val="center"/>
+            </w:pPr>
+            <w:r>
+              <w:rPr>
+                <w:sz w:val="20"/>
+                <w:szCs w:val="20"/>
+              </w:rPr>
+              <w:t>待確認／未簽章</w:t>
+            </w:r>
+          </w:p>
+        </w:tc>
+      </w:tr>
+    </w:tbl>
+    <w:p w14:paraId="6D60EB24" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="001D0287">
+      <w:pPr>
+        <w:sectPr w:rsidR="001D0287">
+          <w:footerReference w:type="default" r:id="rId20"/>
+          <w:pgSz w:w="11900" w:h="16840"/>
+          <w:pgMar w:top="1400" w:right="1290" w:bottom="1400" w:left="1250" w:header="708" w:footer="420" w:gutter="0"/>
+          <w:cols w:space="720"/>
+          <w:docGrid w:linePitch="360"/>
+        </w:sectPr>
+      </w:pPr>
+    </w:p>
+    <w:p w14:paraId="3A29BCA3" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:lastRenderedPageBreak/>
+        <w:t>附件一：</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="6E369D17" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:spacing w:before="120" w:after="120"/>
+        <w:jc w:val="center"/>
+      </w:pPr>
+      <w:r>
+        <w:t>軟體測試計畫書</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="4035806E" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:keepNext/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>一、專案目的</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5F8CC637" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>確認 BMI 計算與分類正確；版本 0.1.0。本報告依現有測試記錄，不擴充功能。</w:t>
+      </w:r>
+      
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="369D060C" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:keepNext/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>二、專案範圍</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="40FDBA93" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>僅 _calculate_bmi 與 _classify_bmi；主控台互動、輸入驗證及正式驗收未執行。</w:t>
+      </w:r>
+      
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="60EB666D" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:keepNext/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>三、測試工作時程</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="41C5594F" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>2026/10/14：核對程式與案例、執行 7 個測試、編製報告。後續工作待排定。</w:t>
+      </w:r>
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="4B001340" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:keepNext/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>四、測試項目及案例</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5CEF5923" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>C1-01：57 kg／67 in；C2-01 至 C2-06：BMI 18.49、18.5、23.99、24、26.99、27。</w:t>
+      </w:r>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="653B7A37" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:keepNext/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>五、測試環境需求</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="35CC7C67" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>Windows 11 build 26300、Python 3.13.15、pytest 9.1.1、AssertPy 1.1；uv 專案 .venv。依 pyproject.toml、uv.lock 管理環境。</w:t>
+      </w:r>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="00CD4EE4" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:keepNext/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>六、人員配置與訓練需求</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="5F5841A4" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>負責人與驗收人員待指定；測試人員需理解公斤／英吋、BMI 門檻、3A 及 pytest。</w:t>
+      </w:r>
+      
+      
+      
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="57DB0EFD" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:keepNext/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>七、測試方法、技術與工具</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="09DAE01F" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>以獨立 test_ 函式、邊界值及 AssertPy 等值斷言測試；分類採未四捨五入值。</w:t>
+      </w:r>
+      
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="2CD4C16E" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="20"/>
+          <w:szCs w:val="20"/>
+        </w:rPr>
+        <w:t>執行指令（專案根目錄）：</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="790D6D54" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:spacing w:line="260" w:lineRule="auto"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="20"/>
+          <w:szCs w:val="20"/>
+        </w:rPr>
+        <w:t>uv run --locked --group test --default-index https://packagefeedproxy.microsoft.io/pypi/simple/ pytest -vv -ra --tb=long --showlocals</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="13281D97" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:spacing w:line="280" w:lineRule="auto"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="20"/>
+          <w:szCs w:val="20"/>
+        </w:rPr>
+        <w:t>結果：7 passed in 0.14s；退出碼 0。環境以 sys.version、platform.platform() 及 importlib.metadata.version() 查詢。</w:t>
+      </w:r>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="0503D6E4" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:keepNext/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>八、測試項目通過／失敗準則</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="7F57A2AB" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>計算斷言 round(actual_bmi, 2) == 19.68；分類字串與預期完全相符。任何斷言失敗皆記為 Fail；7／7 通過僅涵蓋本次範圍。</w:t>
+      </w:r>
+      
+      
+      
+      
+      
+      
+      
+      
+    </w:p>
+    <w:p w14:paraId="60088303" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:keepNext/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>九、測試終止準則與再繼續準則</w:t>
+      </w:r>
+    </w:p>
+    <w:p w14:paraId="419704E6" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:t>環境缺失或無法收集案例時停止，修復後重跑；案例失敗記錄原因，修正後重跑受影響案例及全部 7 個測試，再更新報告。</w:t>
+      </w:r>
+      
+      
+    </w:p>
+    <w:p w14:paraId="59A3BA3A" w14:textId="77777777" w:rsidR="001D0287" w:rsidRDefault="003F6A50">
+      <w:pPr>
+        <w:spacing w:before="100" w:line="280" w:lineRule="auto"/>
+        <w:ind w:left="720"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:sz w:val="20"/>
+          <w:szCs w:val="20"/>
+        </w:rPr>
+        <w:t>依據：src/bmi_calculator/app.py:4、15、29、50、58；pyproject.toml:7、10、14、20。未執行覆蓋率量測，故不宣稱覆蓋率百分比。</w:t>
+      </w:r>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </w:p>
+    <w:sectPr w:rsidR="001D0287">
+      <w:footerReference w:type="default" r:id="rId21"/>
+      <w:pgSz w:w="11900" w:h="16840"/>
+      <w:pgMar w:top="1400" w:right="1290" w:bottom="1400" w:left="1250" w:header="708" w:footer="420" w:gutter="0"/>
+      <w:cols w:space="720"/>
+      <w:docGrid w:linePitch="360"/>
+    </w:sectPr>
+  </w:body>
+</w:document>

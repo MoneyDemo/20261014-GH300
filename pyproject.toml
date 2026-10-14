@@ -1,0 +1,21 @@
+[build-system]
+requires = ["hatchling>=1.26"]
+build-backend = "hatchling.build"
+
+[project]
+name = "bmi-calculator"
+version = "0.1.0"
+description = "Console BMI calculator with focused pytest unit tests"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[dependency-groups]
+test = ["pytest>=8.0", "assertpy>=1.1"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/bmi_calculator"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-vv -ra --tb=long --showlocals --import-mode=importlib"
