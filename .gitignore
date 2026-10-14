@@ -4,3 +4,6 @@ __pycache__/
 .pytest_cache/
 dist/
 /.vscode/mcp.json
+/TodoDemo/App_Data/
+/TodoDemo/bin/
+/TodoDemo/obj/

@@ -1,4 +1,23 @@
-# BMI Calculator
+# TODO 示範網站與 BMI Calculator
+
+## TODO Demo（.NET 8）
+
+`TodoDemo/` 是使用 ASP.NET Core Razor Pages 建立的本機待辦事項網站，可新增、查看、
+編輯、刪除 TODO，並切換完成狀態。資料會保存到 `TodoDemo/App_Data/todos.json`；
+檔案會在第一次新增 TODO 時建立。
+
+### 啟動網站
+
+需要安裝 .NET 8 SDK。在儲存庫根目錄執行：
+
+```sh
+dotnet run --project TodoDemo
+```
+
+開啟終端機顯示的本機網址即可操作。按「新增」建立待辦事項；每筆事項可用圓形按鈕
+切換完成狀態、「編輯」修改內容，或按「刪除」移除。標題必須為 1 至 120 個字元。
+
+## BMI Calculator（既有範例）
 
 以 Python 實作的主控台 BMI 計算器，使用 `src/` 套件佈局、uv 管理依賴，
 並以 pytest 與 AssertPy 測試 BMI 計算及分類。

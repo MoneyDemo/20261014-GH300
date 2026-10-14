@@ -20,3 +20,115 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+body {
+  background: #f7f8fa;
+  color: #202938;
+}
+
+.navbar-brand {
+  font-weight: 700;
+}
+
+.todo-header {
+  padding: 3rem 0 1.5rem;
+}
+
+.todo-header h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 750;
+  letter-spacing: -.04em;
+}
+
+.eyebrow {
+  color: #5369d8;
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  margin-bottom: .5rem;
+}
+
+.todo-add-form {
+  align-items: end;
+  display: flex;
+  gap: 1rem;
+}
+
+.todo-add-form .btn {
+  min-width: 6rem;
+}
+
+.todo-item {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  min-height: 4.5rem;
+}
+
+.status-button {
+  align-items: center;
+  background: white;
+  border: 2px solid #c6ccd6;
+  border-radius: 50%;
+  color: white;
+  display: inline-flex;
+  height: 1.5rem;
+  justify-content: center;
+  padding: 0;
+  width: 1.5rem;
+}
+
+.status-button.is-complete {
+  background: #5369d8;
+  border-color: #5369d8;
+}
+
+.todo-title {
+  flex: 1;
+  overflow-wrap: anywhere;
+}
+
+.todo-title.completed {
+  color: #78808d;
+  text-decoration: line-through;
+}
+
+.todo-actions {
+  align-items: center;
+  display: flex;
+  gap: .5rem;
+}
+
+.todo-actions form {
+  margin: 0;
+}
+
+.empty-state {
+  background: white;
+  border: 1px dashed #c6ccd6;
+  border-radius: .5rem;
+  padding: 2.5rem 1rem;
+  text-align: center;
+}
+
+.edit-card {
+  margin: 4rem auto;
+  max-width: 36rem;
+}
+
+@media (max-width: 576px) {
+  .todo-add-form {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .todo-item {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: .75rem;
+  }
+
+  .todo-actions {
+    margin-left: 2.25rem;
+  }
+}

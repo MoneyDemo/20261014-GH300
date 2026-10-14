@@ -1,10 +1,73 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "待辦清單";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="todo-header">
+    <p class="eyebrow">簡單整理，逐項完成</p>
+    <h1>我的待辦清單</h1>
+    <p class="text-secondary">還有 <strong>@Model.RemainingCount</strong> 件事情等著完成</p>
+</section>
+
+@if (TempData["Message"] is string message)
+{
+    <div class="alert alert-success" role="status">@message</div>
+}
+
+<section class="card shadow-sm mb-4">
+    <div class="card-body">
+        <h2 class="h5 card-title">新增待辦事項</h2>
+        <form method="post" asp-page-handler="Add" class="todo-add-form">
+            <div class="flex-grow-1">
+                <label asp-for="NewTitle" class="form-label">要做什麼？</label>
+                <input asp-for="NewTitle" class="form-control" placeholder="例如：整理書桌" maxlength="120" />
+                <span asp-validation-for="NewTitle" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">新增</button>
+        </form>
+    </div>
+</section>
+
+<section aria-labelledby="todo-list-heading">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 id="todo-list-heading" class="h4 mb-0">所有事項</h2>
+        <span class="badge text-bg-light">@Model.Todos.Count 件</span>
+    </div>
+
+    @if (Model.Todos.Count == 0)
+    {
+        <div class="empty-state">
+            <p class="mb-1">目前還沒有待辦事項</p>
+            <span class="text-secondary">在上方新增第一件事吧。</span>
+        </div>
+    }
+    else
+    {
+        <ul class="list-group todo-list">
+            @foreach (var todo in Model.Todos)
+            {
+                <li class="list-group-item todo-item">
+                    <form method="post" asp-page-handler="Toggle" asp-route-id="@todo.Id">
+                        <button type="submit" class="status-button @(todo.IsCompleted ? "is-complete" : "")"
+                                aria-label="@(todo.IsCompleted ? "標記為未完成" : "標記為完成")"
+                                title="@(todo.IsCompleted ? "標記為未完成" : "標記為完成")">
+                            <span aria-hidden="true">@(todo.IsCompleted ? "✓" : "")</span>
+                        </button>
+                    </form>
+                    <span class="todo-title @(todo.IsCompleted ? "completed" : "")">@todo.Title</span>
+                    <div class="todo-actions">
+                        <a asp-page="/Edit" asp-route-id="@todo.Id" class="btn btn-sm btn-outline-secondary">編輯</a>
+                        <form method="post" asp-page-handler="Delete" asp-route-id="@todo.Id">
+                            <button type="submit" class="btn btn-sm btn-outline-danger">刪除</button>
+                        </form>
+                    </div>
+                </li>
+            }
+        </ul>
+    }
+</section>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
